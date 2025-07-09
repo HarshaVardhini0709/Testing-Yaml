@@ -1,0 +1,53 @@
+$schema: "1.0"
+name: "Dotnet_Team"
+image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
+tasks:
+  - name: winget
+    description: Install Git
+    parameters:
+      package: Git.Git
+  - name: winget
+    description: Install Azure Data Studio
+    parameters:
+      package: Microsoft.AzureDataStudio
+  - name: winget
+    description: Install WinMerge
+    parameters:
+      package: WinMerge.WinMerge
+  - name: winget
+    description: Install Microsoft Visual Studio Code
+    parameters:
+      package: Microsoft.VisualStudioCode
+  - name: winget
+    description: Install WinSCP
+    parameters:
+      package: WinSCP.WinSCP
+  - name: winget
+    description: Install Microsoft SQL Server Management Studio
+    parameters:
+      package: Microsoft.SQLServerManagementStudio.21
+  - name: winget
+    description: Install Mozilla Firefox
+    parameters:
+      package: Mozilla.Firefox
+  - name: winget
+    description: Install Notepad++
+    parameters:
+      package: Notepad++.Notepad++
+  - name: winget
+    description: Install Google Chrome
+    parameters:
+      package: Google.Chrome
+  - name: winget
+    description: Install NVM for Windows
+    parameters:
+      package: CoreyButler.NVMforWindows
+userTasks:
+  - name: winget
+    description: Install Postman
+    parameters:
+      package: Postman.Postman
+  - name: winget
+    description: Install FileZilla
+    parameters:
+      package: FileZilla.Client
